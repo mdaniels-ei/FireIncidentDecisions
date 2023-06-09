@@ -1,0 +1,72 @@
+                           INCIDENT_ID_KS,              KS_COMPLEX_NAME,COMPLEX_FLAG,   LTFS_DAY,LTFS_FIRE, REPORT_YEAR,     INCIDENT_NUMBER,ST_INCNUM,   REPORT_DATE,  REPORT_DOY
+2012_ID-SCF-012151_HALSTEAD       :  81  ,MUSTANG COMPLEX       :  89  ,0.784722222,Min.   :1  ,Mode:logical  ,Min.   :2008  ,ID-SCF-012151:  81  ,ID:3205  ,15-Sep-11:  96  ,Min.   : 73.0  
+2012_ID-SCF-12190_MUSTANG COMPLEX :  77  ,MCGUIRE COMPLEX       :  60  ,NA's:5176  ,1st Qu.:1  ,NA's:6246     ,1st Qu.:2010  ,ID-SCF-12190 :  77  ,MT:1994  ,29-Sep-11:  80  ,1st Qu.:225.0  
+2012_WY-BTF-000006_FONTENELLE     :  63  ,POWELL SBW COMPLEX    :  57  ,NA,Median :1  ,NA,Median :2012  ,WY-BTF-000006:  63  ,WA:  93  ,22-Sep-11:  79  ,Median :243.0  
+2012_ID-NPF-00531_MCGUIRE COMPLEX :  60  ,GOLD PAN COMPLEX      :  56  ,NA,Mean   :1  ,NA,Mean   :2011  ,ID-NPF-00531 :  60  ,WY: 954  ,8-Sep-11 :  79  ,Mean   :243.2  
+2013_ID-PAF-013040_THUNDER CITY   :  56  ,MINER PARADISE COMPLEX:  55  ,NA,3rd Qu.:1  ,NA,3rd Qu.:2012  ,ID-PAF-013040:  56  ,NA,5-Sep-13 :  68  ,3rd Qu.:262.0  
+2013_MT-BRF-13039_GOLD PAN COMPLEX:  56  ,(Other)               : 753  ,NA,Max.   :1  ,NA,Max.   :2013  ,MT-BRF-13039 :  56  ,NA,1-Sep-11 :  67  ,Max.   :363.0  
+(Other)                           :5853  ,NA's                  :5176  ,NA,NA's   :2076  ,NA,NA,(Other)      :5853  ,NA,(Other)  :5777  ,NA
+     HOUR,        INCIDENT_NAME,  START_YEAR,    START_DATE,  START_DOY,START_DATE_CORRECTED,START_DOY_CORRECTED,STATUS,     AREA,AREA_MEASUREMENT
+Min.   :   0  ,HALSTEAD       :  81  ,Min.   :2008  ,8-Aug-12 : 215  ,Min.   : 70.0  ,8-Aug-12 : 215  ,Min.   : 70.0  ,F: 706  ,Min.   :     0  ,ACRES:6241  
+1st Qu.:1416  ,FONTENELLE     :  63  ,1st Qu.:2010  ,30-Jul-12: 157  ,1st Qu.:208.0  ,30-Jul-12: 157  ,1st Qu.:208.0  ,I: 685  ,1st Qu.:    50  ,NA's :   5  
+Median :1630  ,MCGUIRE COMPLEX:  60  ,Median :2012  ,26-Aug-10: 147  ,Median :221.0  ,26-Aug-10: 150  ,Median :221.0  ,U:4855  ,Median :   621  ,NA
+Mean   :1549  ,MUSTANG COMPLEX:  59  ,Mean   :2011  ,28-Jul-10: 137  ,Mean   :220.3  ,28-Jul-10: 137  ,Mean   :220.2  ,NA,Mean   : 10301  ,NA
+3rd Qu.:1750  ,THUNDER CITY   :  56  ,3rd Qu.:2012  ,25-Aug-11: 129  ,3rd Qu.:237.0  ,25-Aug-11: 129  ,3rd Qu.:236.0  ,NA,3rd Qu.:  4679  ,NA
+Max.   :2320  ,(Other)        :5926  ,Max.   :2013  ,(Other)  :5443  ,Max.   :297.0  ,29-Aug-11: 128  ,Max.   :297.0  ,NA,Max.   :341488  ,NA
+NA,NA's           :   1  ,NA,NA's     :  18  ,NA's   :32  ,(Other)  :5330  ,NA,NA,NA's   :77  ,NA
+TYPE_INC,SUPPRESSION_METHOD,         IC_NAME,   IMT_TYPE, IMT_TYPE_DESCRIPTION, CAUSE,             CAUSE_DESCR,    COUNTY,   LATITUDE,  LONGITUDE
+WF :6246  ,CC:2205  ,n/a          : 147  ,1.485416667,Type 4 IC  :1839  ,H   : 490  ,Human              : 490  ,Idaho  :1407  ,Min.   :42.22  ,Min.   :104.1  
+WFU:   0  ,FS:2076  ,Young        : 143  ,0.979861111,Type 3 IC  :1171  ,L   :5221  ,Lightning          :5221  ,Lemhi  : 314  ,1st Qu.:44.48  ,1st Qu.:112.7  
+NA,MM: 484  ,Shawn Pearson:  90  ,0.706944444,Type 2 Team: 898  ,N   :  30  ,N/A                :  30  ,Park   : 307  ,Median :45.66  ,Median :114.6  
+NA,PZ:1481  ,Doug Graves  :  80  ,0.715972222,Type 3 Team: 851  ,U   : 485  ,Under Investigation: 485  ,Teton  : 252  ,Mean   :45.56  ,Mean   :113.7  
+NA,NA,Bob Houseman :  73  ,E      : 391  ,SOPL       : 391  ,NA's:  20  ,NA's               :  20  ,Ravalli: 235  ,3rd Qu.:46.53  ,3rd Qu.:115.2  
+NA,NA,(Other)      :5548  ,(Other): 763  ,(Other)    : 763  ,NA,NA,(Other):3642  ,Max.   :48.98  ,Max.   :145.0  
+NA,NA,NA's         : 165  ,NA's   : 333  ,NA's       : 333  ,NA,NA,NA's   :  89  ,NA,NA
+    LL_QC,UN_USTATE,  UN_UNITID, NWCG_UNITID,GACC,          UnitType,Department,    Agency,OWNERSHIP_STATE,OWNERSHIP_UNITID
+Min.   :2  ,ID  :2353  ,NPF    : 609  ,IDNPF  : 780  ,EB:2085  ,County & Local:  46  ,ID  : 125  ,FS     :5347  ,ID:3205  ,NPF    : 775  
+1st Qu.:2  ,MT  :1532  ,SCF    : 509  ,IDCWF  : 581  ,NR:3759  ,Federal       :5755  ,MT  : 249  ,DNRC   : 249  ,MT:1994  ,CWF    : 590  
+Median :2  ,WA  :  83  ,CWF    : 486  ,IDSCF  : 581  ,NW:  93  ,Interagency   :   7  ,USDA:5347  ,BIA    : 180  ,WA:  93  ,SCF    : 581  
+Mean   :2  ,WY  : 789  ,BRF    : 410  ,MTBRF  : 481  ,RM: 309  ,State         : 433  ,USDI: 408  ,NPS    : 172  ,WY: 954  ,BRF    : 481  
+3rd Qu.:2  ,NA's:1489  ,BTF    : 385  ,WYBTF  : 453  ,NA,NA's          :   5  ,WA  :  48  ,DL     : 117  ,NA,BTF    : 453  
+Max.   :2  ,NA,(Other):2358  ,(Other):3365  ,NA,NA,WY  :  57  ,(Other): 169  ,NA,BOF    : 316  
+NA's   :6014  ,NA,NA's   :1489  ,NA's   :   5  ,NA,NA,NA's:  12  ,NA's   :  12  ,NA,(Other):3050  
+  P_CONTAIN,PERCENT_MMA,   EXP_CONTAIN,LINE_TO_BUILD,LINE_MEASUREMENT,   EST_CONTROL,   DEMOBE_START, CONTROLLED_DATE,INJURIES_TO_DATE,   INJURIES
+Min.   :     0  ,M   : 633  ,31-Oct-12: 149  ,Min.   :   0.00  ,CHAINS:5516  ,1-Dec-12 :  97  ,30-Sep-11:  43  ,26-Sep-13:  23  ,Min.   : 0.000  ,Min.   : 0.0000  
+1st Qu.:     0  ,P   :5608  ,1-Nov-12 : 134  ,1st Qu.:   0.00  ,FEET  :  42  ,30-Sep-11:  82  ,16-Aug-10:  33  ,25-Oct-12:  16  ,1st Qu.: 0.000  ,1st Qu.: 0.0000  
+Median :     5  ,NA's:   5  ,1-Dec-12 : 115  ,Median :   0.00  ,METERS:   6  ,31-Oct-12:  79  ,1-Oct-13 :  32  ,31-Dec-11:  15  ,Median : 0.000  ,Median : 0.0000  
+Mean   : 10592  ,NA,30-Sep-11:  88  ,Mean   :  52.67  ,MILES : 677  ,1-Oct-12 :  50  ,29-Jul-13:  32  ,1-Nov-11 :  11  ,Mean   : 1.248  ,Mean   : 0.1152  
+3rd Qu.:    80  ,NA,1-Oct-12 :  84  ,3rd Qu.:   2.00  ,NA's  :   5  ,1-Nov-12 :  49  ,30-Jul-13:  31  ,7-Oct-11 :  11  ,3rd Qu.: 1.000  ,3rd Qu.: 0.0000  
+Max.   :531425  ,NA,(Other)  :2224  ,Max.   :8300.00  ,NA,(Other)  : 983  ,(Other)  :1449  ,(Other)  : 329  ,Max.   :37.000  ,Max.   :36.0000  
+NA's   :243  ,NA,NA's     :3452  ,NA's   :4915  ,NA,NA's     :4906  ,NA's     :4626  ,NA's     :5841  ,NA's   :1694  ,NA's   :3112  
+  FATALITIES,EVACUATION_IN_PROGRESS,NO_EVACUATION,POTENTIAL,NO_LIKELY, C_WIND_SPEED,C_WIND_DIRECTION,    C_TEMP,   C_TEMPH,   C_TEMPL
+Min.   :0.0000  ,N   :5881  ,N   :5859  ,N   :5190  ,N   :5110  ,Min.   :  1.0  ,SW     : 704  ,Min.   :  1.0  ,Min.   : 1.00  ,Min.   : 1.00  
+1st Qu.:0.0000  ,Y   : 303  ,Y   : 325  ,Y   : 994  ,Y   :1074  ,1st Qu.: 50.0  ,W      : 478  ,1st Qu.: 82.0  ,1st Qu.:58.00  ,1st Qu.:58.00  
+Median :0.0000  ,NA's:  62  ,NA's:  62  ,NA's:  62  ,NA's:  62  ,Median :110.0  ,NW     : 211  ,Median :110.0  ,Median :66.00  ,Median :66.00  
+Mean   :0.0053  ,NA,NA,NA,NA,Mean   :123.5  ,S      : 183  ,Mean   :102.1  ,Mean   :64.72  ,Mean   :64.49  
+3rd Qu.:0.0000  ,NA,NA,NA,NA,3rd Qu.:189.0  ,WSW    : 180  ,3rd Qu.:125.0  ,3rd Qu.:74.00  ,3rd Qu.:74.00  
+Max.   :1.0000  ,NA,NA,NA,NA,Max.   :294.0  ,(Other):1128  ,Max.   :147.0  ,Max.   :90.00  ,Max.   :90.00  
+NA's   :1913  ,NA,NA,NA,NA,NA's   :3394  ,NA's   :3362  ,NA's   :3342  ,NA's   :3342  ,NA's   :3342  
+     C_RH,    C_RHL,    C_RHH, F_WIND_SPEED,F_WIND_DIRECTION,    F_TEMP,   F_TEMPL,   F_TEMPH,     F_RH,    F_RHL
+Min.   :  1.00  ,Min.   :  1.00  ,Min.   :  1.0  ,Min.   :  1.0  ,SW     : 702  ,Min.   :  1.0  ,Min.   : 1.00  ,Min.   : 1.00  ,Min.   :  1.0  ,Min.   : 1.00  
+1st Qu.: 27.00  ,1st Qu.: 10.00  ,1st Qu.: 10.0  ,1st Qu.: 52.0  ,W      : 502  ,1st Qu.:148.0  ,1st Qu.:49.00  ,1st Qu.:45.00  ,1st Qu.: 38.0  ,1st Qu.: 8.00  
+Median : 52.00  ,Median : 17.00  ,Median : 17.0  ,Median :116.0  ,NW     : 242  ,Median :190.0  ,Median :56.00  ,Median :53.00  ,Median :102.0  ,Median :14.00  
+Mean   : 57.95  ,Mean   : 23.58  ,Mean   : 23.5  ,Mean   :156.6  ,S      : 140  ,Mean   :182.6  ,Mean   :54.98  ,Mean   :51.71  ,Mean   :108.5  ,Mean   :19.88  
+3rd Qu.: 81.00  ,3rd Qu.: 28.00  ,3rd Qu.: 28.0  ,3rd Qu.:259.0  ,West   : 110  ,3rd Qu.:238.0  ,3rd Qu.:64.00  ,3rd Qu.:61.00  ,3rd Qu.:155.0  ,3rd Qu.:24.00  
+Max.   :171.00  ,Max.   :100.00  ,Max.   :100.0  ,Max.   :373.0  ,(Other):1109  ,Max.   :283.0  ,Max.   :81.00  ,Max.   :76.00  ,Max.   :304.0  ,Max.   :82.00  
+NA's   :3357  ,NA's   :3357  ,NA's   :3357  ,NA's   :3434  ,NA's   :3441  ,NA's   :3418  ,NA's   :3418  ,NA's   :3418  ,NA's   :3444  ,NA's   :3444  
+    F_RHH,PRIMARY_FUEL_MODEL,GROWTH_POTENTIAL,   TERRAIN,GACC_PRIORITY,DISPATCH_PRIORITY,         UNIT_TYPE,ST_INC,ST_UNIT,   FSCLASS
+Min.   : 1.00  ,3.366666667,Extreme: 201  ,Extreme:1602  ,Min.   : 1.000  ,Min.   :1.00  ,County & Local:  46  ,ID:3205  ,ID  :2353  ,G      :1508  
+1st Qu.:11.00  ,0.658333333,High   :1385  ,High   :2380  ,1st Qu.: 1.000  ,1st Qu.:1.00  ,Federal       :5755  ,MT:1994  ,MT  :1532  ,F      :1191  
+Median :18.00  ,0.825694444,Low    :1417  ,Low    :  44  ,Median : 3.000  ,Median :1.00  ,Interagency   :   7  ,WA:  93  ,WA  :  83  ,E      :1007  
+Mean   :22.09  ,0.288888889,Medium :1818  ,Medium : 809  ,Mean   : 3.379  ,Mean   :1.83  ,State         : 433  ,WY: 954  ,WY  : 789  ,B      : 865  
+3rd Qu.:28.00  ,9:56,NA's   :1425  ,NA's   :1411  ,3rd Qu.: 5.000  ,3rd Qu.:2.00  ,NA's          :   5  ,NA,NA's:1489  ,D      : 739  
+Max.   :85.00  ,(Other): 170  ,NA,NA,Max.   :23.000  ,Max.   :9.00  ,NA,NA,NA,(Other): 859  
+NA's   :3444  ,NA's   : 119  ,NA,NA,NA's   :4569  ,NA's   :5486  ,NA,NA,NA,NA's   :  77  
+ MAX_AREA_INC, FSCLASS_INC,   AREA_Log,SUPPRESSION_BI,SUPP_DECREASE,SUPP_MIX,   IMT_NUM,,,
+Min.   :     0  ,G      :2156  ,Min.   : 0.000  ,NFS:4170  ,4.120833333,3.811805556,Min.   : 1.000  ,,,
+1st Qu.:   139  ,F      :1241  ,1st Qu.: 1.099  ,FS :2076  ,0.258333333,0.609027778,1st Qu.: 3.000  ,,,
+Median :  1264  ,E      : 861  ,Median : 4.828  ,NA :   0  ,NA,NA,Median : 4.000  ,,,
+Mean   : 15579  ,B      : 744  ,Mean   : 4.257  ,NA,NA,NA,Mean   : 4.564  ,,,
+3rd Qu.:  7863  ,D      : 557  ,3rd Qu.: 6.217  ,NA,NA,NA,3rd Qu.: 5.000  ,,,
+Max.   :341488  ,(Other): 685  ,Max.   :11.294  ,NA,NA,NA,Max.   :14.000  ,,,
+NA's   :2  ,NA's   :   2  ,NA's   :43  ,NA,NA,NA,NA's   :333  ,,,
