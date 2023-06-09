@@ -1,0 +1,2861 @@
+[
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column C_WIND_SPEED using expression value.toNumber()",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "C_WIND_SPEED",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column C_WIND_SPEED using expression value.replace(\" \",\"\")",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "C_WIND_SPEED",
+          "expression": "value",
+          "columnName": "C_WIND_SPEED",
+          "from": -10,
+          "to": 500,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "selectBlank": false
+        }
+      ],
+      "mode": "record-based"
+    },
+    "columnName": "C_WIND_SPEED",
+    "expression": "value.replace(\" \",\"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column C_WIND_SPEED",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "C_WIND_SPEED",
+          "expression": "value",
+          "columnName": "C_WIND_SPEED",
+          "from": -10,
+          "to": 500,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "selectBlank": false
+        }
+      ],
+      "mode": "record-based"
+    },
+    "columnName": "C_WIND_SPEED",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "10G20",
+          "10;g20",
+          "10g20",
+          "10;G20",
+          "10g-20"
+        ],
+        "to": "10-20"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "7G15",
+          "7g15",
+          "7-g15",
+          "7G-15"
+        ],
+        "to": "7-15"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "8G17",
+          "8-G17",
+          "8g17",
+          "8/G17"
+        ],
+        "to": "8-17"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "calm",
+          "Calm",
+          "CALM"
+        ],
+        "to": "calm"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "10-15G-25",
+          "10-15G25",
+          "10-15g25"
+        ],
+        "to": "10-15-25"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "15-20",
+          "1520",
+          "15--20"
+        ],
+        "to": "15-20"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "4G9",
+          "4g9",
+          "4-G9"
+        ],
+        "to": "4-9"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "12G20",
+          "12g20",
+          "12-G20"
+        ],
+        "to": "12-20"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "9G25",
+          "9g25"
+        ],
+        "to": "9-25"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "5-10G15",
+          "5-10g15"
+        ],
+        "to": "5-10-15"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "11G20",
+          "11g20"
+        ],
+        "to": "11-20"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "5g10",
+          "5G10"
+        ],
+        "to": "5-10"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "5G12",
+          "5g12"
+        ],
+        "to": "5-12"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "5g11",
+          "5-g11"
+        ],
+        "to": "5-11"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "5-10G25",
+          "5/10G25"
+        ],
+        "to": "5-10-25"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "5G13",
+          "5g13"
+        ],
+        "to": "5-13"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "5G15",
+          "5g15"
+        ],
+        "to": "5-15"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "10mph",
+          "10MPH"
+        ],
+        "to": "10"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "10G15",
+          "10g-15"
+        ],
+        "to": "10-15"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "15G28",
+          "15g28"
+        ],
+        "to": "15-28"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "10G18",
+          "10-G18"
+        ],
+        "to": "10-18"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "15g25",
+          "15G25"
+        ],
+        "to": "15-25"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "10G19",
+          "10g19"
+        ],
+        "to": "10-19"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "10G23",
+          "10g23"
+        ],
+        "to": "10-23"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "10G25",
+          "10g25"
+        ],
+        "to": "10-25"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "15G30",
+          "15g30"
+        ],
+        "to": "15-30"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "6G12",
+          "6;g12"
+        ],
+        "to": "6-12"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "6g16",
+          "6G16"
+        ],
+        "to": "6-16"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "2-6G12",
+          "2-6g12"
+        ],
+        "to": "2-6-12"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "6-10G-20",
+          "6-10G20"
+        ],
+        "to": "6-10-20"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "7/G13",
+          "7g13"
+        ],
+        "to": "7-13"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "7G14",
+          "7-G14"
+        ],
+        "to": "7-14"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "14-G25",
+          "14G25"
+        ],
+        "to": "14-25"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "14G24",
+          "14g24"
+        ],
+        "to": "14-24"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "7G18",
+          "7g18"
+        ],
+        "to": "7-18"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "13g26",
+          "13G26"
+        ],
+        "to": "13-26"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "10-15G20",
+          "10-15g20"
+        ],
+        "to": "10-15-20"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "8G13",
+          "8g13"
+        ],
+        "to": "8-13"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "8g18",
+          "8G18"
+        ],
+        "to": "8-18"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "8G16",
+          "8g16"
+        ],
+        "to": "8-16"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "5g8",
+          "5G8"
+        ],
+        "to": "5-8"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "3G-10",
+          "3G10"
+        ],
+        "to": "3-10"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "N/A",
+          "NA"
+        ],
+        "to": "N/A"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "12G18",
+          "12g18"
+        ],
+        "to": "12-18"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "4G8",
+          "4;g8"
+        ],
+        "to": "4-8"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "9,g13",
+          "9G13"
+        ],
+        "to": "9-13"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "9G19",
+          "9g19"
+        ],
+        "to": "9-19"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "9G18",
+          "9g18"
+        ],
+        "to": "9-18"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "9G17",
+          "9g17"
+        ],
+        "to": "9-17"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column C_WIND_SPEED",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "C_WIND_SPEED",
+          "expression": "value",
+          "columnName": "C_WIND_SPEED",
+          "from": -10,
+          "to": 500,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "selectBlank": false
+        }
+      ],
+      "mode": "record-based"
+    },
+    "columnName": "C_WIND_SPEED",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "6gusts12",
+          "6gusts10"
+        ],
+        "to": "6-12"
+      }
+    ]
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column C_WIND_SPEED using expression value.replace(/G\\-/i,\"-\")",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "C_WIND_SPEED",
+          "expression": "value",
+          "columnName": "C_WIND_SPEED",
+          "from": -10,
+          "to": 500,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "selectBlank": false
+        }
+      ],
+      "mode": "record-based"
+    },
+    "columnName": "C_WIND_SPEED",
+    "expression": "value.replace(/G\\-/i,\"-\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column C_WIND_SPEED using expression value.replace(/\\bgust\\b/i,\"-\")",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "C_WIND_SPEED",
+          "expression": "value",
+          "columnName": "C_WIND_SPEED",
+          "from": -10,
+          "to": 500,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "selectBlank": false
+        }
+      ],
+      "mode": "record-based"
+    },
+    "columnName": "C_WIND_SPEED",
+    "expression": "value.replace(/\\bgust\\b/i,\"-\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column C_WIND_SPEED using expression value.replace(/gust/i,\"-\")",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "C_WIND_SPEED",
+          "expression": "value",
+          "columnName": "C_WIND_SPEED",
+          "from": -10,
+          "to": 500,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "selectBlank": false
+        }
+      ],
+      "mode": "record-based"
+    },
+    "columnName": "C_WIND_SPEED",
+    "expression": "value.replace(/gust/i,\"-\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column C_WIND_SPEED using expression value.replace(/\\-g/i,\"-\")",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "C_WIND_SPEED",
+          "expression": "value",
+          "columnName": "C_WIND_SPEED",
+          "from": -10,
+          "to": 500,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "selectBlank": false
+        }
+      ],
+      "mode": "record-based"
+    },
+    "columnName": "C_WIND_SPEED",
+    "expression": "value.replace(/\\-g/i,\"-\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column C_WIND_SPEED using expression value.replace(/g/i,\"-\")",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "C_WIND_SPEED",
+          "expression": "value",
+          "columnName": "C_WIND_SPEED",
+          "from": -10,
+          "to": 500,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "selectBlank": false
+        }
+      ],
+      "mode": "record-based"
+    },
+    "columnName": "C_WIND_SPEED",
+    "expression": "value.replace(/g/i,\"-\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column C_WIND_SPEED using expression value.replace(/mph/i,\"\")",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "C_WIND_SPEED",
+          "expression": "value",
+          "columnName": "C_WIND_SPEED",
+          "from": -10,
+          "to": 500,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "selectBlank": false
+        }
+      ],
+      "mode": "record-based"
+    },
+    "columnName": "C_WIND_SPEED",
+    "expression": "value.replace(/mph/i,\"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column C_WIND_SPEED using expression value.replace(/to/i,\"-\")",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "C_WIND_SPEED",
+          "expression": "value",
+          "columnName": "C_WIND_SPEED",
+          "from": -10,
+          "to": 500,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "selectBlank": false
+        }
+      ],
+      "mode": "record-based"
+    },
+    "columnName": "C_WIND_SPEED",
+    "expression": "value.replace(/to/i,\"-\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column C_WIND_SPEED",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "C_WIND_SPEED",
+          "expression": "value",
+          "columnName": "C_WIND_SPEED",
+          "from": -10,
+          "to": 500,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "selectBlank": false
+        }
+      ],
+      "mode": "record-based"
+    },
+    "columnName": "C_WIND_SPEED",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "7-19",
+          "7,-19"
+        ],
+        "to": "7-19"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "6-10",
+          "6/-10"
+        ],
+        "to": "6-10"
+      }
+    ]
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column C_WIND_SPEED using expression value.replace(\"<\",\"0-\")",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "C_WIND_SPEED",
+          "expression": "value",
+          "columnName": "C_WIND_SPEED",
+          "from": -10,
+          "to": 500,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "selectBlank": false
+        }
+      ],
+      "mode": "record-based"
+    },
+    "columnName": "C_WIND_SPEED",
+    "expression": "value.replace(\"<\",\"0-\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column C_WIND_SPEED using expression value.replace(\"+\",\"-\")",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "C_WIND_SPEED",
+          "expression": "value",
+          "columnName": "C_WIND_SPEED",
+          "from": -10,
+          "to": 500,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "selectBlank": false
+        }
+      ],
+      "mode": "record-based"
+    },
+    "columnName": "C_WIND_SPEED",
+    "expression": "value.replace(\"+\",\"-\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column C_WIND_SPEED using expression value.replace(\",\",\"-\")",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "C_WIND_SPEED",
+          "expression": "value",
+          "columnName": "C_WIND_SPEED",
+          "from": -10,
+          "to": 500,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "selectBlank": false
+        }
+      ],
+      "mode": "record-based"
+    },
+    "columnName": "C_WIND_SPEED",
+    "expression": "value.replace(\",\",\"-\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column C_WIND_SPEED",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "C_WIND_SPEED",
+          "expression": "value",
+          "columnName": "C_WIND_SPEED",
+          "from": -10,
+          "to": 500,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "selectBlank": false
+        }
+      ],
+      "mode": "record-based"
+    },
+    "columnName": "C_WIND_SPEED",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "li-ht"
+        ],
+        "to": "light"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column C_WIND_SPEED",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "C_WIND_SPEED",
+          "expression": "value",
+          "columnName": "C_WIND_SPEED",
+          "from": -10,
+          "to": 500,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "selectBlank": false
+        }
+      ],
+      "mode": "record-based"
+    },
+    "columnName": "C_WIND_SPEED",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "T-s-rms"
+        ],
+        "to": "T-storms"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column C_WIND_SPEED",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "C_WIND_SPEED",
+          "expression": "value",
+          "columnName": "C_WIND_SPEED",
+          "from": -10,
+          "to": 500,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "selectBlank": false
+        }
+      ],
+      "mode": "record-based"
+    },
+    "columnName": "C_WIND_SPEED",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "W2-4"
+        ],
+        "to": "2-4"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column C_WIND_SPEED",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "C_WIND_SPEED",
+          "expression": "value",
+          "columnName": "C_WIND_SPEED",
+          "from": -10,
+          "to": 500,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "selectBlank": false
+        }
+      ],
+      "mode": "record-based"
+    },
+    "columnName": "C_WIND_SPEED",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "W3-5-8"
+        ],
+        "to": "3-5-8"
+      }
+    ]
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column C_WIND_SPEED using expression value.replace(\"/\",\"\")",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "C_WIND_SPEED",
+          "expression": "value",
+          "columnName": "C_WIND_SPEED",
+          "from": -10,
+          "to": 500,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "selectBlank": false
+        }
+      ],
+      "mode": "record-based"
+    },
+    "columnName": "C_WIND_SPEED",
+    "expression": "value.replace(\"/\",\"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/column-addition",
+    "description": "Create column C_WIND_SPEED_L at index 23 based on column C_WIND_SPEED using expression grel:value.split(\"-\")[0]",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "C_WIND_SPEED",
+          "expression": "value",
+          "columnName": "C_WIND_SPEED",
+          "from": -10,
+          "to": 500,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "selectBlank": false
+        }
+      ],
+      "mode": "record-based"
+    },
+    "newColumnName": "C_WIND_SPEED_L",
+    "columnInsertIndex": 23,
+    "baseColumnName": "C_WIND_SPEED",
+    "expression": "grel:value.split(\"-\")[0]",
+    "onError": "set-to-blank"
+  },
+  {
+    "op": "core/column-addition",
+    "description": "Create column C_WIND_SPEED_H at index 23 based on column C_WIND_SPEED using expression grel:value.split(\"-\")[1-2]",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "C_WIND_SPEED",
+          "expression": "value",
+          "columnName": "C_WIND_SPEED",
+          "from": -10,
+          "to": 500,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "selectBlank": false
+        }
+      ],
+      "mode": "record-based"
+    },
+    "newColumnName": "C_WIND_SPEED_H",
+    "columnInsertIndex": 23,
+    "baseColumnName": "C_WIND_SPEED",
+    "expression": "grel:value.split(\"-\")[1-2]",
+    "onError": "set-to-blank"
+  },
+  {
+    "op": "core/column-move",
+    "description": "Move column C_WIND_SPEED_L to position 23",
+    "columnName": "C_WIND_SPEED_L",
+    "index": 23
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column C_WIND_DIRECTION",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "C_WIND_SPEED",
+          "expression": "value",
+          "columnName": "C_WIND_SPEED",
+          "from": -10,
+          "to": 500,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "selectBlank": false
+        }
+      ],
+      "mode": "record-based"
+    },
+    "columnName": "C_WIND_DIRECTION",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Southwest",
+          "SOUTHWEST",
+          "southwest"
+        ],
+        "to": "SW"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "West",
+          "west",
+          "WEST"
+        ],
+        "to": "W"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "upslope",
+          "Upslope",
+          "UPSLOPE"
+        ],
+        "to": "UP"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "South",
+          "SOUTH",
+          "south"
+        ],
+        "to": "S"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "East",
+          "east",
+          "EAST"
+        ],
+        "to": "E"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "VARIBLE",
+          "Varible",
+          "varible"
+        ],
+        "to": "VAR"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Calm",
+          "calm",
+          "CALM"
+        ],
+        "to": "CALM"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "variable",
+          "Variable",
+          "VARIABLE"
+        ],
+        "to": "VAR"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "W SW",
+          "W -SW"
+        ],
+        "to": "W-SW"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "NE",
+          "ne"
+        ],
+        "to": "NE"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "North",
+          "north"
+        ],
+        "to": "N"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "NW",
+          "nw"
+        ],
+        "to": "NW"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "SE",
+          "se"
+        ],
+        "to": "SE"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "SW",
+          "sw"
+        ],
+        "to": "SW"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "E",
+          "e"
+        ],
+        "to": "E"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "N",
+          "n"
+        ],
+        "to": "N"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "S",
+          "s"
+        ],
+        "to": "S"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "W",
+          "w"
+        ],
+        "to": "W"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column C_WIND_DIRECTION",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "C_WIND_SPEED",
+          "expression": "value",
+          "columnName": "C_WIND_SPEED",
+          "from": -10,
+          "to": 500,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "selectBlank": false
+        }
+      ],
+      "mode": "record-based"
+    },
+    "columnName": "C_WIND_DIRECTION",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "S-SW",
+          "S/SW",
+          "S,SW"
+        ],
+        "to": "S-SW"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "VAR",
+          "Var."
+        ],
+        "to": "VAR"
+      }
+    ]
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column C_WIND_DIRECTION using expression value.trim()",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "C_WIND_SPEED",
+          "expression": "value",
+          "columnName": "C_WIND_SPEED",
+          "from": -10,
+          "to": 500,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "selectBlank": false
+        }
+      ],
+      "mode": "record-based"
+    },
+    "columnName": "C_WIND_DIRECTION",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column C_WIND_DIRECTION using expression value.toUppercase()",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "C_WIND_SPEED",
+          "expression": "value",
+          "columnName": "C_WIND_SPEED",
+          "from": -10,
+          "to": 500,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "selectBlank": false
+        }
+      ],
+      "mode": "record-based"
+    },
+    "columnName": "C_WIND_DIRECTION",
+    "expression": "value.toUppercase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column C_WIND_DIRECTION using expression value.replace(\" / \",\"-\")",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "C_WIND_SPEED",
+          "expression": "value",
+          "columnName": "C_WIND_SPEED",
+          "from": -10,
+          "to": 500,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "selectBlank": false
+        }
+      ],
+      "mode": "record-based"
+    },
+    "columnName": "C_WIND_DIRECTION",
+    "expression": "value.replace(\" / \",\"-\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column C_WIND_DIRECTION using expression value.replace(\" /\",\"-\")",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "C_WIND_SPEED",
+          "expression": "value",
+          "columnName": "C_WIND_SPEED",
+          "from": -10,
+          "to": 500,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "selectBlank": false
+        }
+      ],
+      "mode": "record-based"
+    },
+    "columnName": "C_WIND_DIRECTION",
+    "expression": "value.replace(\" /\",\"-\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column C_WIND_DIRECTION using expression value.replace(\"/ \",\"-\")",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "C_WIND_SPEED",
+          "expression": "value",
+          "columnName": "C_WIND_SPEED",
+          "from": -10,
+          "to": 500,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "selectBlank": false
+        }
+      ],
+      "mode": "record-based"
+    },
+    "columnName": "C_WIND_DIRECTION",
+    "expression": "value.replace(\"/ \",\"-\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column C_WIND_DIRECTION using expression value.replace(\"/\",\"-\")",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "C_WIND_SPEED",
+          "expression": "value",
+          "columnName": "C_WIND_SPEED",
+          "from": -10,
+          "to": 500,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "selectBlank": false
+        }
+      ],
+      "mode": "record-based"
+    },
+    "columnName": "C_WIND_DIRECTION",
+    "expression": "value.replace(\"/\",\"-\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column C_WIND_DIRECTION",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "C_WIND_DIRECTION",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "W, SW",
+          "w sw",
+          "W - SW",
+          "W / SW",
+          "W SW",
+          "W/ SW"
+        ],
+        "to": "W-SW"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "VAR",
+          "Var",
+          "var",
+          "Var.",
+          "var."
+        ],
+        "to": "VAR"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "SW-W",
+          "SW/W",
+          "SW,W",
+          "SWw",
+          "sw-w"
+        ],
+        "to": "SW-W"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "S SW",
+          "S, SW",
+          "S - SW",
+          "s sw"
+        ],
+        "to": "S-SW"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "W NW",
+          "W - NW",
+          "W, NW",
+          "w- nw"
+        ],
+        "to": "W-NW"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "slope",
+          "SLOPE",
+          "Slope"
+        ],
+        "to": "SLOPE"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "North",
+          "north",
+          "NORTH"
+        ],
+        "to": "N"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALM",
+          "Calm",
+          "calm"
+        ],
+        "to": "CALM"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "N NW",
+          "n nw",
+          "n- nw"
+        ],
+        "to": "N-NW"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "West",
+          "west",
+          "WEST"
+        ],
+        "to": "W"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "n/a",
+          "N-A",
+          "na"
+        ],
+        "to": "N/A"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "NE",
+          "ne",
+          "N.E"
+        ],
+        "to": "NE"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "East",
+          "EAST",
+          "east"
+        ],
+        "to": "E"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "NORTHEAST",
+          "Northeast",
+          "north/east"
+        ],
+        "to": "NE"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Variable",
+          "variable",
+          "VARIABLE"
+        ],
+        "to": "VAR"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Up Canyon",
+          "Up canyon"
+        ],
+        "to": "UPC"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "SW-NW",
+          "SW_NW"
+        ],
+        "to": "SW-NW"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "S - SE",
+          "S SE"
+        ],
+        "to": "S-SE"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "upslope",
+          "Upslope"
+        ],
+        "to": "UP"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "UP SLOPE",
+          "up slope"
+        ],
+        "to": "UP"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Southeast",
+          "SouthEast"
+        ],
+        "to": "SE"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Northwest",
+          "NORTHWEST"
+        ],
+        "to": "NE"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "14 SW",
+          "SW @ 14"
+        ],
+        "to": "SW"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "SE",
+          "se"
+        ],
+        "to": "SE"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "SW @ 8",
+          "SW 8"
+        ],
+        "to": "SW"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "E",
+          "e"
+        ],
+        "to": "E"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "N",
+          "n"
+        ],
+        "to": "N"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "S",
+          "s"
+        ],
+        "to": "S"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "W",
+          "w"
+        ],
+        "to": "W"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "South West",
+          "SOUTH WEST"
+        ],
+        "to": "SW"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Southwest",
+          "southwest"
+        ],
+        "to": "SW"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "SW 6",
+          "SW @ 6"
+        ],
+        "to": "SW"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "N NE",
+          "N, NE"
+        ],
+        "to": "N-NE"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "ALL",
+          "all"
+        ],
+        "to": "ALL"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "SW 2-4",
+          "2-4 SW"
+        ],
+        "to": "SW"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column C_WIND_DIRECTION",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "C_WIND_DIRECTION",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "SW",
+          "sw",
+          "Sw",
+          "S-W"
+        ],
+        "to": "SW"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "South",
+          "south",
+          "SOUTH"
+        ],
+        "to": "S"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "NW",
+          "nw",
+          "N/W"
+        ],
+        "to": "NW"
+      }
+    ]
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column C_WIND_DIRECTION using expression value.toUppercase()",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "C_WIND_DIRECTION",
+    "expression": "value.toUppercase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column C_WIND_DIRECTION using expression value.replace(\"/\",\"-\")",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "C_WIND_DIRECTION",
+    "expression": "value.replace(\"/\",\"-\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column C_WIND_DIRECTION using expression value.replace(\",\",\"-\")",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "C_WIND_DIRECTION",
+    "expression": "value.replace(\",\",\"-\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column C_WIND_DIRECTION using expression value.replace(\"TO\",\"-\")",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "C_WIND_DIRECTION",
+    "expression": "value.replace(\"TO\",\"-\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column C_WIND_DIRECTION",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "C_WIND_DIRECTION",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "3-8 SE"
+        ],
+        "to": "SE"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column C_WIND_DIRECTION",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "C_WIND_DIRECTION",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "12-16SW"
+        ],
+        "to": "SW"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column C_WIND_DIRECTION",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "C_WIND_DIRECTION",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "UPSLOPE SW",
+          "UPSLOPE-SW"
+        ],
+        "to": "UP-SW"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column C_WIND_DIRECTION",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "C_WIND_DIRECTION",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "SW @ 12",
+          "SW @ 16"
+        ],
+        "to": "SW"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column C_WIND_DIRECTION",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "C_WIND_DIRECTION",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "VARIABLE S",
+          "VRIABLE"
+        ],
+        "to": "VAR"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column C_WIND_DIRECTION",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "C_WIND_DIRECTION",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "W UP SLOPE",
+          "W-UPSLOPE"
+        ],
+        "to": "W-UP"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "SW 12-17",
+          "SW 15"
+        ],
+        "to": "SW"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "SSW 4-8",
+          "SSW @12"
+        ],
+        "to": "SSW"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "NW 12-16",
+          "NW 12-22"
+        ],
+        "to": "NW"
+      }
+    ]
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column C_WIND_DIRECTION using expression value.replace(\" \",\"-\")",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "C_WIND_DIRECTION",
+    "expression": "value.replace(\" \",\"-\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column C_WIND_DIRECTION",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "C_WIND_DIRECTION",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "UP---SW",
+          "UP-SW"
+        ],
+        "to": "UP-SW"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "SW-W",
+          "SW---W"
+        ],
+        "to": "SW-W"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "NE",
+          "--NE"
+        ],
+        "to": "NE"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column C_WIND_DIRECTION",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "C_WIND_DIRECTION",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "SW-SE",
+          "SW---SE"
+        ],
+        "to": "SW-SE"
+      }
+    ]
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column C_TEMP_H using expression grel:cells[\"C_TEMP_L\"].value",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "C_TEMP_H",
+          "expression": "value",
+          "columnName": "C_TEMP_H",
+          "invert": false,
+          "selection": [],
+          "omitBlank": false,
+          "selectBlank": true,
+          "omitError": false,
+          "selectError": false
+        }
+      ],
+      "mode": "record-based"
+    },
+    "columnName": "C_TEMP_H",
+    "expression": "grel:cells[\"C_TEMP_L\"].value",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column C_RH",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "C_RH",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "12",
+          "12%",
+          "12 %"
+        ],
+        "to": "12"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "7",
+          "7%",
+          "7 %"
+        ],
+        "to": "7"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "25",
+          "25%",
+          "25 %"
+        ],
+        "to": "25"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "26",
+          "26%",
+          "26 %"
+        ],
+        "to": "26"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "10-15",
+          "10-15 %",
+          "10-15%"
+        ],
+        "to": "10-15"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "11",
+          "11%"
+        ],
+        "to": "11"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "13",
+          "13%"
+        ],
+        "to": "13"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "14",
+          "14%"
+        ],
+        "to": "14"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "15",
+          "15%"
+        ],
+        "to": "15"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "16",
+          "16%"
+        ],
+        "to": "16"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "17",
+          "17%"
+        ],
+        "to": "17"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "18",
+          "18%"
+        ],
+        "to": "18"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "19",
+          "19%"
+        ],
+        "to": "19"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "5",
+          "5%"
+        ],
+        "to": "5"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "6",
+          "6%"
+        ],
+        "to": "6"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "8",
+          "8%"
+        ],
+        "to": "8"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "9",
+          "9%"
+        ],
+        "to": "9"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "21",
+          "21%"
+        ],
+        "to": "21"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "22",
+          "22%"
+        ],
+        "to": "22"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "23",
+          "23%"
+        ],
+        "to": "23"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "24",
+          "24%"
+        ],
+        "to": "24"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "27",
+          "27%"
+        ],
+        "to": "27"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "28",
+          "28%"
+        ],
+        "to": "28"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "29",
+          "29%"
+        ],
+        "to": "29"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "35-40",
+          "35-40%"
+        ],
+        "to": "35-40"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "11-16",
+          "11-16 %"
+        ],
+        "to": "11-16"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "30",
+          "30%"
+        ],
+        "to": "30"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "31",
+          "31%"
+        ],
+        "to": "31"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "32",
+          "32%"
+        ],
+        "to": "32"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "33",
+          "33%"
+        ],
+        "to": "33"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "34",
+          "34%"
+        ],
+        "to": "34"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "35",
+          "35%"
+        ],
+        "to": "35"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "40",
+          "40%"
+        ],
+        "to": "40"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "43",
+          "43%"
+        ],
+        "to": "43"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "45",
+          "45%"
+        ],
+        "to": "45"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "47",
+          "47%"
+        ],
+        "to": "47"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "48",
+          "48%"
+        ],
+        "to": "48"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "49",
+          "49%"
+        ],
+        "to": "49"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "50",
+          "50%"
+        ],
+        "to": "50"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "54",
+          "54%"
+        ],
+        "to": "54"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "55",
+          "55%"
+        ],
+        "to": "55"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "57",
+          "57%"
+        ],
+        "to": "57"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "18-22",
+          "18-22 %"
+        ],
+        "to": "18-22"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "60",
+          "60%"
+        ],
+        "to": "60"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "62",
+          "62%"
+        ],
+        "to": "62"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "18-24",
+          "18-24%"
+        ],
+        "to": "18-24"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "66",
+          "66%"
+        ],
+        "to": "66"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "67",
+          "67%"
+        ],
+        "to": "67"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "80-100",
+          "80-100%"
+        ],
+        "to": "80-100"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "70",
+          "70%"
+        ],
+        "to": "70"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "75",
+          "75%"
+        ],
+        "to": "75"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "78",
+          "78%"
+        ],
+        "to": "78"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "17-22",
+          "17-22%"
+        ],
+        "to": "17-22"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "81",
+          "81%"
+        ],
+        "to": "81"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "84",
+          "84%"
+        ],
+        "to": "84"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "85",
+          "85%"
+        ],
+        "to": "85"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "88",
+          "88%"
+        ],
+        "to": "88"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "89",
+          "89%"
+        ],
+        "to": "89"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "90",
+          "90%"
+        ],
+        "to": "90"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "15-25",
+          "15-25%"
+        ],
+        "to": "15-25"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "15-20",
+          "15-20%"
+        ],
+        "to": "15-20"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "14-19",
+          "14-19%"
+        ],
+        "to": "14-19"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "N/A",
+          "n/a"
+        ],
+        "to": "N/A"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "LOW 20'S",
+          "low 20's"
+        ],
+        "to": "20-25"
+      }
+    ]
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column C_RH using expression value.replace(\"%\",\"\")",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "C_RH",
+    "expression": "value.replace(\"%\",\"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column C_RH",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "C_RH",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          ".5\" Rain"
+        ],
+        "to": "100"
+      }
+    ]
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column C_WIND_SPEED_L using expression grel:cells[\"C_WIND_SPEED\"].value",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "C_WIND_SPEED_L",
+          "expression": "value",
+          "columnName": "C_WIND_SPEED_L",
+          "invert": false,
+          "selection": [],
+          "omitBlank": false,
+          "selectBlank": true,
+          "omitError": false,
+          "selectError": false
+        }
+      ],
+      "mode": "record-based"
+    },
+    "columnName": "C_WIND_SPEED_L",
+    "expression": "grel:cells[\"C_WIND_SPEED\"].value",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column C_WIND_SPEED_L",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "C_WIND_SPEED_L",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "variable"
+        ],
+        "to": "VAR"
+      }
+    ]
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column C_WIND_SPEED_H using expression grel:cells[\"C_WIND_SPEED_L\"].value",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "C_WIND_SPEED_H",
+          "expression": "value",
+          "columnName": "C_WIND_SPEED_H",
+          "invert": false,
+          "selection": [],
+          "omitBlank": false,
+          "selectBlank": true,
+          "omitError": false,
+          "selectError": false
+        }
+      ],
+      "mode": "record-based"
+    },
+    "columnName": "C_WIND_SPEED_H",
+    "expression": "grel:cells[\"C_WIND_SPEED_L\"].value",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  }
+]
